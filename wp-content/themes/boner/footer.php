@@ -5,11 +5,11 @@
     </div>
 
     <div id="mail" class="mc_popup"
-    <?php //setcookie("user", "First Time", time()+31536000);
-if($_COOKIE["user"]==null || $_COOKIE["user"]=="") { ?><?php } ?> >
+    <?php setcookie("user", "First Time", time()+31536000);
+        if($_COOKIE["user"]==null || $_COOKIE["user"]=="") { ?> style="display:block;" <?php } ?> >
         <a href="#" class="mc_popup-close">cl</a>
         <div class="mc_popup-content">SUBSCRIBE SO WE CAN KEEP YOU UP TO DATE WITH NEWS AND OFFERS</div>
-        <div id= "status_message"> </div>
+
         <?php mailchimpSF_signup_form(); ?>
     </div>
     <ul id="social">

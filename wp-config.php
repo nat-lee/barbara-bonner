@@ -16,16 +16,16 @@
 define('WP_MEMORY_LIMIT', '64M');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'db169924_bonner');
+define('DB_NAME', 'barbara-bonner');
 
 /** MySQL database username */
-define('DB_USER', 'db169924');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'umbertob2013');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', 'internal-db.s169924.gridserver.com');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
