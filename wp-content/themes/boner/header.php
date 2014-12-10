@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="styles/bootstrap.css">
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/bootstrap.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/subscribe-popup.js"></script>
 <!--<script>
 $(document).ready(function(){
   $("button").click(function(){

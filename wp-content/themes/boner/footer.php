@@ -4,9 +4,7 @@
         <div style="" class="fb-like mobile320" data-href="http://www.facebook.com/barbaraboner.co.uk" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-colorscheme="dark"></div>
     </div>
 
-    <div id="mail" class="mc_popup"
-    <?php setcookie("user", "First Time", time()+31536000);
-        if($_COOKIE["user"]==null || $_COOKIE["user"]=="") { ?> style="display:block;" <?php } ?> >
+    <div id="mail" class="mc_popup">
         <a href="#" class="mc_popup-close">cl</a>
         <div class="mc_popup-content">SUBSCRIBE SO WE CAN KEEP YOU UP TO DATE WITH NEWS AND OFFERS</div>
 
