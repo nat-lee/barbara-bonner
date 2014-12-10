@@ -1,0 +1,238 @@
+/*****************************
+  Setup
+ *****************************/
+.slideshow {position:relative;}
+.anythingSlider li {
+	list-style: none;
+	padding: 0;
+}
+#homeslides {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	ul {
+		width: 100%;
+		height: 100%;
+	}
+	div.anythingSlider { height:100% !important; }
+}
+#collection {
+	position: absolute;
+	top: 80px;
+	bottom: 75px;
+	left: 0;
+	right: 0;
+	ul.container {
+		width: 100%;
+		height: 100%;
+	}
+	ul.thumbNav {
+		position: fixed;
+		width: 100%;
+		bottom: 100px;
+		height: 30px;
+		text-align: center;
+		li {
+			display:inline-block;
+		}
+		a {
+			display: inline-block;
+			width:20px;
+			height:30px;
+			text-indent: -9999px;
+			background:#444;
+			background:rgba(255,255,255,0.2);
+			.trans(all 0.2s);
+			margin:0 5px;
+		}
+		a.cur,
+		a:hover {
+			background:#fff;
+			background:rgba(255,255,255,0.8);
+		}
+	}
+	img {
+		width:auto!important;
+		height:100%;
+		margin:0 auto;
+		display:block;
+	}
+	div.anythingSlider { height:100% !important; }
+	.anythingBase .panel {
+		background: transparent;
+		display: block;
+		padding: 0;
+		margin: 0;
+		float:left;
+		overflow:hidden;
+		position:static;
+	}
+	.anythingWindow {
+		position: relative;
+		left: -25%;
+		padding-right: 25%;
+	}
+	.arrow.back { 
+		background:url(img/left.png) no-repeat center center;
+		left:25%;
+		margin:0 0 0 -40px;
+		opacity:0.2;
+		.trans(all 0.2s);
+	}
+	.arrow.forward {
+		background:url(img/right.png) no-repeat center center;
+		right:25%;
+		margin:0 -40px 0 0;
+		opacity:0.2;
+		.trans(all 0.2s);
+	}
+	.arrow.back:hover {
+		opacity:1.0;
+	}
+	.arrow.forward:hover {
+		opacity:1.0;
+	}
+	.arrow span {
+		display: none;
+	}
+	.arrow {
+		bottom:15px;
+		position:absolute;
+		display:block;
+		.trans(background-color 0.2s);
+		z-index: 9;
+	}
+	.arrow a { 
+		display:block;
+		height:85px;
+		width:70px;
+		text-align:center;
+		outline:0;
+		margin:0;
+	}
+}
+#productslides {
+	width:500px;
+	float: left;
+	ul {
+		width:500px;
+		height:500px;
+		overflow: hidden;
+	}
+	ul.thumbNav {
+		text-align: center;
+		position: absolute;
+		bottom: 10px;
+		right: 5px;
+		height:auto;
+		li {
+			display:inline-block;
+		}
+		a:link,
+		a:visited {
+			display: inline-block;
+			width:20px;
+			height:20px;
+			.br(20px);
+			text-indent: -9999px;
+			color:transparent;
+			background:#444;
+			background:rgba(0,0,0,0.3);
+			.trans(all 0.2s);
+			margin:0 5px;
+		}
+		a.cur,
+		a:hover {
+			background:#000;
+			background:rgba(0,0,0,0.8);
+		}
+	}
+	img {
+		width:100%;
+		height:auto!important;
+	}
+	.anythingBase .panel {
+		background: #000;
+		display: block;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+		position: absolute
+		top:0;
+		left:0;
+	}
+}
+#collectionlogo {
+	position: absolute;
+	bottom: 90px;
+	width: 100%;
+	text-align: center;
+	img {
+		max-width: 40%;
+	}
+}
+.panel .main {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.panel .overlay {
+	position:absolute;
+	top: 50%;
+	left: -50%;
+	width: 800px;
+	height: 800px;
+	margin: -400px 0 0 -400px;
+	opacity:0.0;
+	.trans(all 0.2s);
+}
+.panel.activePage .overlay {
+	left: 50%;
+	opacity:1.0;
+}
+/***********************
+  COMMON SLIDER STYLING
+ ***********************/
+div.anythingSlider {
+	padding:0;
+	display: block;
+	margin: 0 auto 0 auto;
+	overflow: visible !important; /* needed for Opera and Safari */
+	position: relative;
+}
+/* anythingSlider viewport window */
+div.anythingSlider .anythingWindow {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+/* anythingSlider base (original element) */
+.anythingBase {
+	background: transparent;
+	list-style: none;
+	position: absolute;
+	overflow: visible !important;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+}
+/* all panels inside the slider */
+.anythingBase .panel {
+	background: transparent;
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top:0;
+	left:0;
+}

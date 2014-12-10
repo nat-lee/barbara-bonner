@@ -1,0 +1,73 @@
+#modal .nav {
+	top:47%;
+	position:absolute;
+	display:block;
+	.trans(background-color 0.2s);
+}
+#modal .nav { 
+	display:block;
+	height:30px;
+	width:30px;
+	text-align:center;
+	outline:0;
+	margin:0;
+}
+#modal .prev { 
+	background:rgba(255,255,255,0.4) url(img/doubleprev.png) no-repeat 0 0;
+	left:0;
+}
+#modal .next {
+	background:rgba(255,255,255,0.4) url(img/doublenext.png) no-repeat -30px 0;
+	right:0;
+}
+#modal .prev:hover {
+	background:rgba(255,255,255,0.8) url(img/doubleprev.png) no-repeat -30px 0;
+}
+#modal .next:hover {
+	background:rgba(255,255,255,0.8) url(img/doublenext.png) no-repeat 0 0;
+}
+#modal {
+	display:block;
+	position:fixed;
+	background:#333;
+	background:rgba(0,0,0,.8);
+	z-index:100;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	cursor:pointer;
+	overflow:scroll;
+}
+#modal figure {
+	background:#fff;
+	border-radius:2px;
+	.bs(0 2px 3px 0 rgba(0,0,0,0.6));
+	width:550px;
+	height:auto;
+	position:relative;
+	cursor:default;
+	.trans(all 0.2s);
+	margin:30px auto;
+	padding:5px;
+}
+#modal figure img {
+	width:100%;
+	height:auto;
+	cursor:pointer;
+	display: block;
+}
+#modal a.trigger { 
+	position:absolute;
+	bottom:4px;
+	right:5px;
+	font-size:16px;
+	color:#666;
+}
+#modal a.trigger:hover {
+	color:#000;
+	text-decoration:none;
+	border:none;
+}
+#modal .next { right:5px; }
+#modal .prev { left:5px; }
